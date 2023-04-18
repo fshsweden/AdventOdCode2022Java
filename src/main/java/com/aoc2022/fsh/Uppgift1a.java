@@ -9,28 +9,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-/*
-# calculate sum of numbers in lines array until blank line found
-def sum_numbers(lines):
-sums = []
-sums.append(0)
-index=0
-for line in lines:
-if line == '' or line == '\n':
-sums.append(0)
-index += 1
-else:
-sums[index] += int(line)
-return sums
-
-sums = sum_numbers(lines)
-
-print(max(sums))
-*/
-
-
 public class Uppgift1a {
-
     public static int sum_numbers(List<String> lines) {
         int[] sums = new int[lines.size()];
         int index = 0;
